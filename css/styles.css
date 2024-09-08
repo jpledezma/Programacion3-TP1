@@ -1,0 +1,74 @@
+*{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: #EEE;
+    font-family: sans-serif;
+}
+
+/* Header */
+/* Está dificil alinear cosas sin flexbox */
+
+header > div{
+    /* background-color: blue; */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo{
+    width: 7%;
+    min-width: 100px;
+    padding: 0 25px;
+    margin: 20px auto;
+}
+.logo img{
+    width: 100%;
+    border: 0;
+}
+
+.main-menu{
+    width: 85%;
+}
+.main-menu li{
+    list-style: none;
+    display: inline;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 50px;
+    text-wrap: nowrap;
+}
+.main-menu a{
+    text-decoration: none;
+    color: #EEE;
+}
+.main-menu a:hover{
+    color: #dace69
+}
+
+/* Principal */
+
+.page-banner-container{
+    height: calc(100vh - 300px);
+    margin-bottom: 50px;
+}
+.page-banner{
+    height: 100%;
+    background-image: url("../assets/img/main3.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+    min-height: 250px;
+}
+.title{
+    text-align: center;
+    margin-top: 40vh;
+}
+.title h1{
+    font-size: 52px;
+    font-family: cursive;
+}
