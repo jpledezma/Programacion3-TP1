@@ -2,12 +2,19 @@
     /* border: 1px solid red; */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: black;
-    color: #EEE;
+    color: #DBDBDB;
     font-family: sans-serif;
     font-size: 20px;
+}
+a{
+    color: #AB966F;
+}
+li{
+    list-style: none;
 }
 
 /* Header */
@@ -42,10 +49,10 @@ header > div{
 }
 .main-menu a{
     text-decoration: none;
-    color: #EEE;
+    color: #DBDBDB;
 }
 .main-menu a:hover{
-    color: #dace69
+    color: #AB966F
 }
 
 /* Principal */
@@ -60,8 +67,8 @@ header > div{
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100%;
-    border-top: 1px solid #EEE;
-    border-bottom: 1px solid #EEE;
+    border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
     min-height: 250px;
 }
 .title{
@@ -90,15 +97,72 @@ header > div{
 }
 
 .footer-container{
-    border-top: 1px solid #EEE;
+    border-top: 1px solid #DBDBDB;
     margin-top: 70px;
     height: 150px;
 }
 .footer-container footer{
-    height: 100%;
-    display: block;
+    margin-top: 60px;
 }
 .footer-container p{
     text-align: center;
-    padding: 70px 0;
+}
+
+.hema-info{
+    width: 60%;
+    margin: 0 auto;
+}
+.about-info, .contact{
+    width: 70%;
+    margin-left: 50px;
+}
+.about-info section{
+    padding: 30px 15px;
+}
+.countries-list{
+    padding: 15px 0;
+}
+.countries-list > li{
+    margin: 5px 0;
+}
+
+.contact-form > div{
+    margin: 20px 0;
+}
+.contact-form label{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.contact-form label, .contact-form input, .contact-form textarea{
+    display: block;
+    font-size: 18px;
+}
+.contact-form input, .contact-form textarea{
+    width: 300px;
+    height: 30px;
+    background-color: #DBDBDB;
+}
+.contact-form input:focus, .contact-form textarea:focus{
+    background-color: #EFEFEF;
+}
+.contact-form textarea{
+    height: 100px;
+}
+.submit-button-container{
+    width: 300px;
+}
+#submit-button{
+    width: 120px;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+#submit-button:hover{
+    background-color: #AB966F;
+    border: none;
+}
+#submit-button:focus{
+    background-color: #e4bf7b;
+    border: none;
 }
